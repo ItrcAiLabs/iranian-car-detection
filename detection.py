@@ -7,7 +7,7 @@ import cv2
 warnings.filterwarnings("ignore", category=FutureWarning)
 
 # Load YOLOv5 model
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='./weights/best.pt')
 
 def detect_cars(img_path, save_output=True):
     results = model(img_path)
@@ -32,3 +32,5 @@ def detect_cars(img_path, save_output=True):
         print(f"Saved result to {output_path}")
     
     return label, (x1, y1, x2, y2)  
+
+
