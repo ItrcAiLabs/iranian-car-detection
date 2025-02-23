@@ -90,3 +90,17 @@ This document provides a log of the training process, including loss values, pre
 
 
 ### 8. How To use:
+
+```python
+from detection import detect_cars
+detect_cars("detect_cars('/home/reza/Downloads/206.jpeg")
+```
+![Alt text](detected_206.jpg)
+
+
+Fusing layers... 
+YOLOv5s summary: 157 layers, 7045186 parameters, 0 gradients, 15.9 GFLOPs
+Adding AutoShape... 
+Saved result to detected_206.jpg
+('Peugeot-206', (14, 23, 555, 598))
+'''shell
